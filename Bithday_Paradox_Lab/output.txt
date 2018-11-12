@@ -1,0 +1,23 @@
+(venv) ➜  CPSC_3320_Bithday_Paradox git:(master) ✗ python3 birthday_paradox.py -t 1
+Starting the Birthday paradox program
+Probability of collision 0.0
+There were 0 collisions
+Probability running 10000 times was 0.0
+
+(venv) ➜  CPSC_3320_Bithday_Paradox git:(master) ✗ python3 birthday_paradox.py -t 23
+Starting the Birthday paradox program
+Probability of collision 0.5000017521827107
+There were 5058 collisions
+Probability running 10000 times was 0.5058
+
+(venv) ➜  CPSC_3320_Bithday_Paradox git:(master) ✗ python3 birthday_paradox.py -t 40
+Starting the Birthday paradox program
+Probability of collision 0.8819900459088765
+There were 8926 collisions
+Probability running 10000 times was 0.8926
+
+(venv) ➜  CPSC_3320_Bithday_Paradox git:(master) ✗ python3 birthday_paradox.py -t 365
+Starting the Birthday paradox program
+Probability of collision 1.0
+There were 10000 collisions
+Probability running 10000 times was 1.0
