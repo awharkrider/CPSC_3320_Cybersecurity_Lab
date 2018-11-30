@@ -2,8 +2,7 @@
 Author: Aaron Hakrider
 Date: 9/27/18
 """
-from LFSR_LAB import lfsr
-
+import lfsr
 
 def test_lfsr():
     p = 0b101
