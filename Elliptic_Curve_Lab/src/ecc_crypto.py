@@ -4,9 +4,8 @@ Date: 11-30-2018
 
 Collaborated with: kebixler, jeshaffer, amwallace
 """
-
+import secrets
 from mycrypto import modinv
-import random
 
 
 class EllipticCurve:
@@ -82,7 +81,7 @@ MyP256 = curve_myP256()
 
 def keygen(curve):
     """page 283 of Understanding cryptography"""
-    d = random.randint(1, curve.q)
+    d = secrets.randbelow(curve.q)
 
     B = curve.multiply(d, curve.A)
 
@@ -91,7 +90,7 @@ def keygen(curve):
 
 def sign(curve, h_x, priv_key):
     """page 283 of Understanding cryptography"""
-    kE = random.randint(1, curve.q)
+    kE = secrets.randbelow(curve.q)
 
     R = curve.multiply(kE, curve.A)
 
